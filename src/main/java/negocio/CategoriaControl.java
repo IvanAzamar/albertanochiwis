@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package negocio;
-
+//hola
 import datos.CategoriaDAO;
 import entidades.Categoria;
 import java.util.ArrayList;
