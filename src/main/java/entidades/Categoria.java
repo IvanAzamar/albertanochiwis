@@ -16,6 +16,7 @@ public class Categoria {
     private boolean activo;
     
     //Constructores
+    // Constructor vacio
     public Categoria() {
       
     }
