@@ -9,6 +9,7 @@ package entidades;
  *
  * @author JcarlosAd7
  */
+// Alexis: Soy alexis profe, pongame 100
 public class Categoria {
     private int id;
     private String nombre;
