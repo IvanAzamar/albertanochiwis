@@ -18,9 +18,9 @@ import javax.swing.JOptionPane;
  *
  * @author JcarlosAd7
  */
-public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          // holaaaaaaaaaaaaaaaaaaa
+public class CategoriaDAO implements CrudSimpleInterface<Categoria> {
     private final Conexion CON;
-    private PreparedStatement ps;
+    private PreparedStatement ps;//soy profugo 
     private ResultSet rs;
     private boolean resp;
     
