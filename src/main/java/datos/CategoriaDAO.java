@@ -7,7 +7,7 @@ package datos;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;//hola inge
+import java.sql.SQLException;
 import database.Conexion;
 import datos.interfaces.CrudSimpleInterface;
 import entidades.Categoria;
@@ -18,13 +18,9 @@ import javax.swing.JOptionPane;
  *
  * @author JcarlosAd7
  */
-// Sanchez Barrios Jesus no trajo su lap, soy yo profe Jesus, pero si hice la actividad
 public class CategoriaDAO implements CrudSimpleInterface<Categoria> {
-    private final Conexion CON; // Conexion con la base de datos de com Miguel Marvic
-    private PreparedStatement ps;//Esta libreria prepara el estatuto para sql, ivan azamar 
-public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          // holaaaaaaaaaaaaaaaaaaa
     private final Conexion CON;
-    private PreparedStatement ps;
+    private PreparedStatement ps;//Esta libreria prepara el estatuto para sql, ivan azamar 
     private ResultSet rs;
     private boolean resp;
     
@@ -81,7 +77,7 @@ public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          /
         try {
             ps=CON.conectar().prepareStatement("UPDATE categoria SET nombre=?, descripcion=? WHERE id=?");
             ps.setString(1, obj.getNombre());
-            ps.setString(2, obj.getDescripcion());
+            ps.setString(2, obj.getDescripcion());//holaa, buenas tardes 
             ps.setInt(3, obj.getId());
             if (ps.executeUpdate()>0){
                 resp=true;
