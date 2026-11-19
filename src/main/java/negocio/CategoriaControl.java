@@ -15,6 +15,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author JcarlosAd7
  */
+// Alexis: profe ya me cambie de rama, soy alexis
 public class CategoriaControl {
     private final CategoriaDAO DATOS;
     private Categoria obj;
