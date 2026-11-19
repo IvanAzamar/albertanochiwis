@@ -18,10 +18,10 @@ import javax.swing.JOptionPane;
  *
  * @author JcarlosAd7
  */
-public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          // holaaaaaaaaaaaaaaaaaaa
+public class CategoriaDAO implements CrudSimpleInterface<Categoria> {
     private final Conexion CON;
-    private PreparedStatement ps;
-    private ResultSet rs;
+    private PreparedStatement ps;//Esta libreria prepara el estatuto para sql, ivan azamar 
+    private ResultSet rs;// Almacena y recorre los registros que devuelve una consulta SELECT de SQL, Mario Ramses
     private boolean resp;
     
     public CategoriaDAO(){
