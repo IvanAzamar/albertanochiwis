@@ -7,27 +7,27 @@ package datos;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;//hola inge
+import java.sql.SQLException;
 import database.Conexion;
 import datos.interfaces.CrudSimpleInterface;
 import entidades.Categoria;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; 
 /**
  *
  * @author JcarlosAd7
  */
-public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          // holaaaaaaaaaaaaaaaaaaa
+public class CategoriaDAO implements CrudSimpleInterface<Categoria> {
     private final Conexion CON;
-    private PreparedStatement ps;
+    private PreparedStatement ps;//Esta libreria prepara el estatuto para sql, ivan azamar 
     private ResultSet rs;
     private boolean resp;
     
     public CategoriaDAO(){
         CON=Conexion.getInstancia();
     }
-    
+    HOLA SOY JULIO:
     
     @Override
     public List<Categoria> listar(String texto) {
