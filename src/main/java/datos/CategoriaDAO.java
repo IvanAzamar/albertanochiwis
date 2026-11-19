@@ -13,14 +13,14 @@ import datos.interfaces.CrudSimpleInterface;
 import entidades.Categoria;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;//Hola de Yisus
 /**
  *
  * @author JcarlosAd7
  */
-public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          // holaaaaaaaaaaaaaaaaaaa
+public class CategoriaDAO implements CrudSimpleInterface<Categoria> {
     private final Conexion CON;
-    private PreparedStatement ps;
+    private PreparedStatement ps;//Esta libreria prepara el estatuto para sql, ivan azamar 
     private ResultSet rs;
     private boolean resp;
     
