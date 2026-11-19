@@ -6,7 +6,7 @@
 package datos;
 
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.ResultSet;//Que tal su dia inge
 import java.sql.SQLException;//hola inge
 import database.Conexion;
 import datos.interfaces.CrudSimpleInterface;
@@ -18,13 +18,9 @@ import javax.swing.JOptionPane;
  *
  * @author JcarlosAd7
  */
-// Sanchez Barrios Jesus no trajo su lap, soy yo profe Jesus, pero si hice la actividad
 public class CategoriaDAO implements CrudSimpleInterface<Categoria> {
-    private final Conexion CON; // Conexion con la base de datos de com Miguel Marvic
-    private PreparedStatement ps;//Esta libreria prepara el estatuto para sql, ivan azamar 
-public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          // holaaaaaaaaaaaaaaaaaaa
     private final Conexion CON;
-    private PreparedStatement ps;
+    private PreparedStatement ps;//Esta libreria prepara el estatuto para sql, ivan azamar 
     private ResultSet rs;
     private boolean resp;
     
@@ -59,11 +55,23 @@ public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          /
     public boolean insertar(Categoria obj) {
         resp=false;
         try {
-            ps=CON.conectar().prepareStatement("INSERT INTO categoria (nombre,descripcion,activo) VALUES (?,?,1)");
-            ps.setString(1, obj.getNombre());
-            ps.setString(2, obj.getDescripcion());
-            if (ps.executeUpdate()>0){
-                resp=true;
+            public boolean insertarCategoria(Categoria obj) {
+    final String sql = "INSERT INTO categoria (nombre, descripcion, activo) VALUES (?, ?, ?)";
+
+    try (Connection con = CON.conectar();
+         PreparedStatement ps = con.prepareStatement(sql)) { //Gracias por el 100 inge
+
+        ps.setString(1, obj.getNombre());
+        ps.setString(2, obj.getDescripcion());
+        ps.setBoolean(3, true);   // o ps.setInt(3, 1) si la columna es TINYINT
+
+        return ps.executeUpdate() > 0;
+
+    } catch (SQLException e) {
+        logger.log(Level.SEVERE, "Error al insertar categoría", e);
+        return false; // H
+    }
+}
             }
             ps.close();
         }  catch (SQLException e) {
