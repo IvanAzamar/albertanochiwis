@@ -180,3 +180,5 @@ public class CategoriaDAO implements CrudSimpleInterface<Categoria> {          /
     }
     
 }
+
+/*HOLAAAAAAAAA PROFEEEEEEEEEEE-ATTE ABDRELANYENLI VAZQUEZ RODRIGUEZ*/
