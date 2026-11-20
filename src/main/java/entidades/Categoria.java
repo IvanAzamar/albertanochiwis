@@ -22,7 +22,7 @@ public class Categoria {
     }
 
     public Categoria(int id, String nombre, String descripcion, boolean activo) {
-        this.id = id;
+        this.id = id; //Asigna el id recibido al atributo de la clase, Abraham Flores
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.activo = activo;
