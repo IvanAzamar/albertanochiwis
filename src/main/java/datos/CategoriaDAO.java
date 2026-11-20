@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package datos;
-
+//PROFE SOY IRVING, AUN ALCANZO?
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;//hola inge
